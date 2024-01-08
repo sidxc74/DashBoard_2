@@ -5,7 +5,7 @@ import { Provider } from "react-redux"
 import { store } from "./store/store"
 
 
-function App({state}) {
+function App() {
 
 
   
@@ -13,8 +13,8 @@ function App({state}) {
   return (
     <Provider store={store}>
     <div className ="flex min-h-screen min-w-screen bg-black text-white">
-       <Sidebar active={active}/>
-       <Outlet setActive={setActive}/> 
+       <Sidebar />
+       <Outlet /> 
     </div>
     </Provider>
       
