@@ -5,10 +5,10 @@ import { Provider } from "react-redux"
 import { store } from "./store/store"
 
 
-function App() {
+function App({state}) {
 
 
-  const [active,setActive] = useState(true)
+  
 
   return (
     <Provider store={store}>
